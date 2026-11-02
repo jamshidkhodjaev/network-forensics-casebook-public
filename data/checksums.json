@@ -1,0 +1,22 @@
+{
+  ".github/workflows/verify.yml": "c16fd3737f426c2390d6249efab4bc46e4a8312d5a6011eeded011ea315f03c7",
+  ".gitignore": "02d237030c60f349494ccee5f9a0726c3cec459693ff824e151dc03a728f3452",
+  "README.md": "5c1888eaa138435483e85e21f1bfb2ffa6fc3d97416161484251c8efd6b0d3d4",
+  "data/packet-checks.json": "5423e0751f4b4c3e7fa416b3c1c075f3bb5d74b56ebfa1e92f12ed4fdf12c51b",
+  "data/provenance.json": "2e767d822768e109d20e31efe5eac9a379574e0de68e78b1a61359dbdb1eede2",
+  "docs/limitations.md": "3fe8bf2b1d70427b1f8500d871ce67704f7a526c4d46a7d1e0c51b1363407db6",
+  "docs/methodology.md": "9c8fad5f33456fc3313bd702311c12a99df8d5c8dbdb35f8905016622b671153",
+  "docs/prospective-files.txt": "fb5c204bbbc21b7e912a85de8e1912d711a52f60454d00dd76ad303b4a7ca519",
+  "docs/public-release-audit.md": "712bfaaafeae278e9d2295baa6e96e65f15edee93ce9b0f69739a31f2768a92c",
+  "docs/publication-notes.md": "46a929f4b40f6d2b5bb7346a5ef80eed74dbade5954633557e121f46bd32a2f9",
+  "docs/source-attribution.md": "02222286160cc4b4ef1d3635c4fe6b0001ba8081b6abee9c9e12d17436ec9f60",
+  "docs/validation-results.json": "5290dbb7d1cdfa7843d518c0994cc5435ff542572f0734d1cacb2945609815b9",
+  "evidence/evidence.csv": "dc0b93061c25230e86aea1bb35cc605734ce3d624b5fe92efe26e6c40ee80653",
+  "evidence/timeline.csv": "73fff638361e2ebf8956947c8e3b55a9867924ea1802bbed37450c222a3aecfc",
+  "report.md": "ce8d6ab5ca260b7624c658414cb49837c1eb4303961fa0ac564048711eadfd79",
+  "scripts/casebook.py": "2a97bcef22552e084b614189c80f8a5d48fe6456addb8097985d6ac96452b111",
+  "scripts/reproduce.py": "0a44a1d35911657f6a97c5cd2c499c566b53349ecf60ae23e5b6b94239e135f3",
+  "scripts/validate.py": "003af07ed2f665f09c5d85454ad215d479ed4e271ace06613749c33eafb29cca",
+  "tests/fixtures/synthetic.json": "3378b33e7038498fc8c03563759e360a8ee30c70f21e9e9332caec71ab14bb2b",
+  "tests/test_public.py": "083a238faa24e02ea70c3c75cf1e1d971082f811c917707af79334355d6ff020"
+}

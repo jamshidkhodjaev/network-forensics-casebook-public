@@ -1,0 +1,17 @@
+{
+  "evidence_count": 9,
+  "handling": "selected redacted derivatives of reviewed private findings; not synthetic",
+  "packet_count": 46937,
+  "pcap_filename": "2018-06-30-traffic-analysis-exercise.pcap",
+  "pcap_sha256": "902c9f31e78ceb9a28519c6499d07db0901d535df2a4a8b005c8a598ddb08e77",
+  "public_event_count": 35,
+  "reference_tshark_version": "4.6.9",
+  "reviewed_source_artifact_sha256": {
+    "evidence/evidence.csv": "e925ae682094669b1e4ad4a28b9a3fe898973b4904046b9564143d7c5cc41c32",
+    "evidence/timeline.csv": "3e437e8e3a5c65ab137317ad7583835cf7f2d96083d5149256c679a4757bcd46",
+    "report.md": "6eb174e4105e39d53bf2edd9a563163437978f9200814253bdb3be88108fe97d"
+  },
+  "rights": "Attribution only; no blanket redistribution permission established. Capture and raw bodies excluded.",
+  "schema_version": "public-1.0",
+  "source_url": "https://malware-traffic-analysis.net/2018/06/30/index.html"
+}

@@ -1,0 +1,59 @@
+{
+  "environment": "Fresh Python 3.13.0 venv on macOS Apple Silicon; only pip installed; no private repository dependency",
+  "method": "Fresh copy; no Git history; offline stage has no capture or stream exports",
+  "tests_passed": 13,
+  "deterministic_offline_output": true,
+  "public_files_unchanged": true,
+  "hosted_public_ci": "not run",
+  "checks": [
+    {
+      "command": "python --version",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout": "Python 3.13.0\n",
+      "stderr": ""
+    },
+    {
+      "command": "python -m pip list --format=json",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout": "[{\"name\": \"pip\", \"version\": \"24.2\"}]\n",
+      "stderr": ""
+    },
+    {
+      "command": "python -B -m unittest discover -s tests -v",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout": "",
+      "stderr": "test_chronology (test_public.PublicTests.test_chronology) ... ok\ntest_deterministic_offline_output (test_public.PublicTests.test_deterministic_offline_output) ... ok\ntest_duplicate_ids (test_public.PublicTests.test_duplicate_ids) ... ok\ntest_missing_pcap_explicit (test_public.PublicTests.test_missing_pcap_explicit) ... ok\ntest_no_private_or_raw_dependency (test_public.PublicTests.test_no_private_or_raw_dependency) ... ok\ntest_offline_validation (test_public.PublicTests.test_offline_validation) ... ok\ntest_prohibited_payload_file (test_public.PublicTests.test_prohibited_payload_file) ... ok\ntest_redaction_label_required (test_public.PublicTests.test_redaction_label_required) ... ok\ntest_report_unknown_evidence (test_public.PublicTests.test_report_unknown_evidence) ... ok\ntest_report_unknown_packet (test_public.PublicTests.test_report_unknown_packet) ... ok\ntest_schema_rejects_wrong_headers (test_public.PublicTests.test_schema_rejects_wrong_headers) ... ok\ntest_sensitive_token_rejected (test_public.PublicTests.test_sensitive_token_rejected) ... ok\ntest_synthetic_fixture_and_transforms (test_public.PublicTests.test_synthetic_fixture_and_transforms) ... ok\n\n----------------------------------------------------------------------\nRan 13 tests in 0.069s\n\nOK\n"
+    },
+    {
+      "command": "python -B -O scripts/validate.py",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout": "{\"evidence_records\": 9, \"timeline_events\": 35, \"validation\": \"offline only; no capture or endpoint outcome verification\"}\n",
+      "stderr": ""
+    },
+    {
+      "command": "python -B -O scripts/validate.py",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout": "{\"evidence_records\": 9, \"timeline_events\": 35, \"validation\": \"offline only; no capture or endpoint outcome verification\"}\n",
+      "stderr": ""
+    },
+    {
+      "command": "python -B scripts/reproduce.py --pcap missing.pcap",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "stdout": "",
+      "stderr": "ERROR: Missing local evidence: supply an independently obtained PCAP with --pcap\n"
+    },
+    {
+      "command": "python -B scripts/reproduce.py --pcap ../local-evidence/source.pcap",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "stdout": "{\"body_checks\": 5, \"outcome\": \"download and execution unconfirmed\", \"selected_packets_verified\": 35, \"source_hash_unchanged\": true}\n",
+      "stderr": ""
+    }
+  ]
+}
