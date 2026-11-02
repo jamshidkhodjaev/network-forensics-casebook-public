@@ -33,7 +33,7 @@ python -B -m unittest discover -s tests -v
 python -B -O scripts/validate.py
 ```
 
-The public suite has **13 tests**. It validates schemas, references, chronology, labels, safety checks, deterministic output and hashes. This count belongs to this edition only. CI uses Python 3.13 and does not download evidence. Hosted public CI has not been run.
+The public suite has **13 tests**. It validates schemas, references, chronology, labels, safety checks, deterministic output and hashes. This count belongs to this edition only. CI uses Python 3.13 and does not download evidence. The first hosted **Public offline verification** run (#1) succeeded on commit `52e3a98` in **44 seconds**; see [GitHub Actions](https://github.com/jamshidkhodjaev/network-forensics-casebook-public/actions). This success covers hosted offline validation, not the optional PCAP-dependent reproduction described below.
 
 ## Optional local PCAP reproduction
 
